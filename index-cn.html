@@ -5,15 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>明日-合伙资金 - 首页</title>
     <style>
-        body { font-family: 'Georgia', sans-serif; margin: 1; padding: 0; background-color: #f4f7f6; color: #333; }
-        .header { background-color: #3A6BF2; color: white; padding: 15px 20px; text-align: center; }
-        .header h1 { margin: 5; font-size: 24px; }
-        .nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .nav a:hover { text-decoration: underline; }
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .content h2 { color: #3A6BF2; border-bottom: 2px solid #3A6BF2; padding-bottom: 10px; margin-top: 0; }
-        .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 30px; }
-        .lang-switch { margin-left: 20px; padding: 5px 10px; border: 1px solid white; border-radius: 4px; font-size: 0.9em; }
+        /* General Styling and Typography */
+        body { font-family: 'BiauKai', 'Georgia', sans-serif; margin: 0; padding: 0; background-color: #f0f3f6; color: #333; }
+        
+        /* Header Styling */
+        .header { background-color: #1d5fa1; /* Deep Navy Blue */ color: white; padding: 20px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        .nav { margin-top: 15px; }
+        .nav a { color: #FFD700; /* Gold */ margin: 0 18px; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s; }
+        .nav a:hover { color: white; text-decoration: underline; }
+        .lang-switch { border: 1px solid #FFD700; border-radius: 4px; padding: 5px 10px; font-size: 0.9em; margin-left: 30px; }
+
+        /* Main Container and Content Area */
+        .container { max-width: 900px; margin: 40px auto; padding: 40px; background-color: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        .content h2 { color: #1d5fa1; /* Deep Navy Blue */ border-bottom: 3px solid #FFD700; /* Gold underline */ padding-bottom: 15px; margin-bottom: 25px; font-size: 24px; font-weight: bold; }
+        
+        /* Introduction Text */
+        .content p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
+        
+        /* Investment Policies Section */
+        h3 { color: #3A6BF2; /* Accent Blue */ margin-top: 30px; margin-bottom: 15px; font-size: 20px; }
+        ul { list-style: none; padding: 0; display: flex; justify-content: space-between; gap: 20px; }
+        ul li { 
+            background-color: #f8f8f8; 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            border-radius: 6px; 
+            flex-basis: 30%; 
+            text-align: center; 
+            font-weight: bold; 
+            color: #1d5fa1; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+            transition: transform 0.2s;
+        }
+        ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 51, 102, 0.2);
+        }
+        
+        /* Footer Styling */
+        .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -30,21 +61,23 @@
 
     <div class="container">
         <div class="content">
-            <h2>欢迎访问明日-合伙资金说明网页</h2>
-            <p>我们是一家以结果为导向的合伙，专注于战略性财务规划和小型企业咨询。我们的使命是提供个性化、透明且可操作的建议，为客户带来可持续的增长。</p>
+            <h2>致合伙人：我们的价值投资承诺</h2>
             
-            <p>由 Jane Doe 和 John Smith 创立，我们拥有超过30年的市场分析和风险管理综合经验。我们坚信在信任和共同成功的基础上建立长期关系。</p>
+            <p><strong>明日合伙基金</strong>是一个价值投资基金，汇集了所有合伙人的个人资产。我们奉行<strong>价值投资理念</strong>。作为普通合伙人（GP），实现所有合伙人资本的长期稳定增值是我的使命。</p>
+            
+            <p>我们专注于证券投资领域，并严格遵守零杠杆政策。我们优先追求长期、可持续的价值创造，并不着眼于短期快速回报。我们使用该平台记录长期业绩，并保持对所有合伙人的透明度。</p>
 
-            <h3>核心专业领域：</h3>
+            <h3>核心投资准则:</h3>
             <ul>
-                <li>小型企业税务策略</li>
-                <li>退休与继承规划</li>
-                <li>市场进入咨询</li>
+                <li>聚焦商业分析 (Business Focus)</li>
+                <li>长期主义 (Long-term Oriented)</li>
+                <li>安全边际 (Margin of Safety)</li>
             </ul>
         </div>
     </div>
 
     <div class="footer">
         &copy; 2025 杨明暠
+    </div>
 </body>
 </html>
