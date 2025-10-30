@@ -26,7 +26,7 @@
         /* Investment Policies Section */
         h3 { color: #3A6BF2; /* Accent Blue */ margin-top: 30px; margin-bottom: 15px; font-size: 20px; }
         
-        /* --- ACCORDION ROW STYLING --- */
+        /* --- ACCORDION ROW STYLING (using <details> tag) --- */
         .tenets-accordion { 
             width: 100%; 
             display: flex; /* Makes items align horizontally */
@@ -34,27 +34,33 @@
             gap: 20px; /* Spacing between the three columns */
         }
         .tenet-item {
+            /* Now <details> tag */
             border: 1px solid #ddd;
             border-radius: 6px;
-            margin-bottom: 10px;
             overflow: hidden;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             flex-basis: 32%; /* Ensures each item takes roughly one-third of the space */
             flex-shrink: 0; /* Prevents shrinking */
+            margin-bottom: 10px;
         }
+
         .tenet-header {
+            /* Now <summary> tag */
             background-color: #f8f8f8;
-            padding: 15px 10px; /* Reduced horizontal padding */
+            padding: 15px 10px;
             cursor: pointer;
             font-weight: bold;
             color: #1d5fa1; 
-            font-size: 1.0em; /* Slightly reduced font size for row fit */
+            font-size: 1.0em;
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: background-color 0.2s;
             text-align: center;
-            flex-direction: column; /* Stacks text and icon vertically */
+            list-style: none; /* Hide default arrow */
+        }
+        .tenet-header::-webkit-details-marker {
+            display: none; /* Hide default arrow in Chrome/Safari */
         }
         .tenet-header:hover {
             background-color: #e9e9e9;
@@ -62,27 +68,21 @@
         .tenet-header .icon {
             font-size: 1.0em;
             transition: transform 0.3s;
-            margin-top: 5px;
+            margin-left: 10px;
         }
-        .tenet-header .tenet-title {
-             font-size: 1.1em;
+
+        /* Custom arrow direction when open */
+        .tenet-item[open] > .tenet-header .icon {
+            transform: rotate(180deg);
         }
+        
         .tenet-content {
-            padding: 0 20px;
-            max-height: 0; 
-            overflow: hidden;
-            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+            padding: 15px 20px;
             background-color: white;
             color: #555;
             line-height: 1.6;
             font-size: 0.95em;
-        }
-        .tenet-content.active {
-            max-height: 400px; /* Increased height to accommodate vertical content flow */
-            padding: 15px 20px;
-        }
-        .tenet-item.active .tenet-header .icon {
-            transform: rotate(180deg);
+            border-top: 1px solid #eee;
         }
         
         /* Footer Styling */
@@ -114,37 +114,37 @@
             <h3>Core Investment Tenets:</h3>
             <div class="tenets-accordion">
                 
-                <div class="tenet-item" id="tenet1">
-                    <div class="tenet-header" onclick="toggleTenet('tenet1')">
+                <details class="tenet-item" id="tenet1">
+                    <summary class="tenet-header">
                         <span class="tenet-title">Business Focus</span>
                         <span class="icon">&#9660;</span> <!-- Down Arrow -->
-                    </div>
+                    </summary>
                     <div class="tenet-content">
-                        <p>We see common stock holdings as business investments, and we only invest in businesses we can understand.</p> 
+                        <p>We regard common stock holdings as business investments, and we only invest in businesses we can understand.</p> 
 
-                        <p>We'll strive for holding a portfolio of good business with a cost under or close to their intrinsic values to get long-term satisfactory returns.</p>
+                        <p>We strive for holding a portfolio of good business with a cost under or close to their intrinsic values to achieve satisfactory long-term returns.</p>
                     </div>
-                </div>
+                </details>
 
-                <div class="tenet-item" id="tenet2">
-                    <div class="tenet-header" onclick="toggleTenet('tenet2')">
+                <details class="tenet-item" id="tenet2">
+                    <summary class="tenet-header">
                         <span class="tenet-title">Long-term Oriented</span>
                         <span class="icon">&#9660;</span>
-                    </div>
+                    </summary>
                     <div class="tenet-content">
-                        <p>'If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes.' Enlightened by the wisdom of Mr. Buffett and Mr. Munger, our goal is to maximize the power of compound interest with minimum operational interference in good businesses.</p>
+                        <p>'If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes.' Enlightened by the wisdom of Mr. Buffett and Mr. Munger, our goal is to maximize the power of compounding with minimal operational interference in good businesses.</p>
                     </div>
-                </div>
+                </details>
 
-                <div class="tenet-item" id="tenet3">
-                    <div class="tenet-header" onclick="toggleTenet('tenet3')">
+                <details class="tenet-item" id="tenet3">
+                    <summary class="tenet-header">
                         <span class="tenet-title">Margin of Safety</span>
                         <span class="icon">&#9660;</span>
-                    </div>
+                    </summary>
                     <div class="tenet-content">
                         <p>Inspired by Benjamin Graham, we purchase securities only when the market price and the economic characteristics of the business grant us an satisfactory margin of safety. This margin provides a crucial buffer against adverse economic events and unforeseen business risks. </p>
                     </div>
-                </div>
+                </details>
             </div>
         </div>
     </div>
