@@ -9,7 +9,7 @@
         body { font-family: 'Georgia', sans-serif; margin: 0; padding: 0; background-color: #f0f3f6; color: #333; }
         
         /* Header */
-        .header { background-color: #1d5fa1; /* Lighter Professional Blue */ color: white; padding: 20px 20px; text-align: center; }
+        .header { background-color: #1d5fa1; /* Deep Navy Blue */ color: white; padding: 20px 20px; text-align: center; }
         .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
         .nav { margin-top: 15px; }
         .nav a { color: #FFD700; margin: 0 18px; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s; }
@@ -18,26 +18,53 @@
 
         /* Main Container */
         .container { max-width: 900px; margin: 40px auto; padding: 40px; background-color: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
-        .content h2 { color: #1d5fa1; /* Lighter Professional Blue */ border-bottom: 3px solid #FFD700; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; font-weight: bold; }
+        .content h2 { color: #1d5fa1; /* Deep Navy Blue */ border-bottom: 3px solid #FFD700; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; font-weight: bold; }
         .content p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
 
-        /* Page-Specific: Service Items */
+        /* Page-Specific: Service Items (Retained styling, but div removed) */
         .service-item {
             background-color: #f8f8f8;
             border: 1px solid #ddd;
             padding: 25px;
             border-radius: 8px;
             margin-bottom: 25px;
-            border-left: 5px solid #1d5fa1; /* Lighter Professional Blue */
+            border-left: 5px solid #1d5fa1; /* Deep Navy Blue Accent */
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.2s, box-shadow 0.2s;
         }
         .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(58, 107, 242, 0.15); /* Shadow using Lighter Blue */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 51, 102, 0.1);
         }
-        .service-item h3 { margin-top: 0; color: #003366; /* Accent (Original Navy) */ font-size: 20px; }
+        .service-item h3 { margin-top: 0; color: #3A6BF2; /* Accent Blue */ font-size: 20px; }
         
+        /* Document Link List Styling (Copied from letters.html) */
+        .document-list { list-style: none; padding: 0; margin-top: 30px; }
+        .document-list li { 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 15px; 
+            transition: background-color 0.2s;
+        }
+        .document-list li:hover {
+             background-color: #f9f9f9;
+        }
+        .document-list a { 
+            color: #3A6BF2; /* Accent Blue */
+            font-weight: bold; 
+            text-decoration: none; 
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        .document-list a:hover { color: #1d5fa1; } /* Darker Blue on hover */
+        .document-meta { 
+            font-size: 0.9em; 
+            color: #777; 
+            margin-left: 10px; 
+            display: block; 
+            margin-top: 5px;
+        }
+
         /* Footer */
         .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 50px; }
     </style>
@@ -57,21 +84,19 @@
     <div class="container">
         <div class="content">
             <h2>Our Investment Philosophy: Road to Investment</h2>
+            <p>Our philosophy is grounded in patience, rigorous analysis, and a commitment to owning exceptional businesses for the long term. Our systematic approach ensures every decision contributes to the core mission of **long-term capital preservation and compounding**.</p>
             
-            <div class="service-item">
-                <h3>Value-Driven Selection</h3>
-                <p>We focus on identifying fundamentally sound businesses trading below their intrinsic value. Our strategy emphasizes deep due diligence and long-term holding periods to capture compounding returns.</p>
-            </div>
+            <!-- Document Link Section -->
+            <ul class="document-list">
+                <li>
+                    <!-- UPDATED: Href points to the newly created markdown file and uses the download attribute -->
+                    <a href="./road_to_investment.pdf" download="Road_to_Investment.pdf">
+                        Road to Investment: A Pursuit of Enduring Wisdom
+                    </a>
+                    <span class="document-meta">[December 31st, 2025]</span>
+                </li>
+            </ul>
 
-            <div class="service-item">
-                <h3>Risk Management & Capital Preservation</h3>
-                <p>Preserving partner capital is our primary mandate. We employ concentrated but diversified portfolios and utilize robust hedging strategies to mitigate systemic market risk.</p>
-            </div>
-            
-            <div class="service-item">
-                <h3>Active Engagement</h3>
-                <p>We actively engage with management teams of portfolio companies to encourage optimal capital allocation, operational efficiency, and sustainable governance practices.</p>
-            </div>
         </div>
     </div>
 
