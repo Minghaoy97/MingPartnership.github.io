@@ -9,7 +9,7 @@
         body { font-family: 'BiauKai', 'Georgia', sans-serif; margin: 0; padding: 0; background-color: #f0f3f6; color: #333; }
         
         /* Header */
-        .header { background-color: #1d5fa1; /* Lighter Professional Blue */ color: white; padding: 20px 20px; text-align: center; }
+        .header { background-color: #1d5fa1; /* Deep Navy Blue */ color: white; padding: 20px 20px; text-align: center; }
         .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
         .nav { margin-top: 15px; }
         .nav a { color: #FFD700; margin: 0 18px; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s; }
@@ -18,26 +18,36 @@
 
         /* Main Container */
         .container { max-width: 900px; margin: 40px auto; padding: 40px; background-color: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
-        .content h2 { color: #1d5fa1; /* Lighter Professional Blue */ border-bottom: 3px solid #FFD700; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; font-weight: bold; }
+        .content h2 { color: #1d5fa1; /* Deep Navy Blue */ border-bottom: 3px solid #FFD700; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; font-weight: bold; }
         .content p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
 
-        /* Page-Specific: Service Items */
-        .service-item {
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            border-left: 5px solid #1d5fa1; /* Lighter Professional Blue */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
+        /* Document Link List Styling (Copied from letters.html) */
+        .document-list { list-style: none; padding: 0; margin-top: 30px; }
+        .document-list li { 
+            margin-bottom: 15px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 15px; 
+            transition: background-color 0.2s;
         }
-        .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(58, 107, 242, 0.15); /* Shadow using Lighter Blue */
+        .document-list li:hover {
+             background-color: #f9f9f9;
         }
-        .service-item h3 { margin-top: 0; color: #003366; /* Accent (Original Navy) */ font-size: 20px; }
-        
+        .document-list a { 
+            color: #3A6BF2; /* Accent Blue */
+            font-weight: bold; 
+            text-decoration: none; 
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        .document-list a:hover { color: #1d5fa1; } /* Darker Blue on hover */
+        .document-meta { 
+            font-size: 0.9em; 
+            color: #777; 
+            margin-left: 10px; 
+            display: block; 
+            margin-top: 5px;
+        }
+
         /* Footer */
         .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 50px; }
     </style>
@@ -57,26 +67,26 @@
     <div class="container">
         <div class="content">
             <h2>我们的投资理念：投资之路</h2>
+            <p>我们的投资理念植根于耐心、严谨的分析以及长期持有卓越企业的承诺。我们的系统化方法确保每一个决策都致力于**长期资本保全与复利增值**的核心使命。</p>
             
-            <div class="service-item">
-                <h3>价值驱动的筛选</h3>
-                <p>我们专注于识别那些以低于内在价值交易的、基本面稳健的企业。我们的战略强调深入尽职调查和长期持有，以获取复利回报。</p>
-            </div>
+            <!-- Document Link Section (Matching services.html structure) -->
+            <ul class="document-list">
+                <li>
+                    <!-- Link points to the English PDF-like markdown file for download -->
+                    <a href="./road_to_investment.pdf" download="Road_to_Investment.pdf">
+                        漫漫投资路：吾将上下而求索
+                    </a>
+                    <span class="document-meta">[December 31, 2025]</span>
+                </li>
+            </ul>
 
-            <div class="service-item">
-                <h3>风险管理与资本保全</h3>
-                <p>保全合伙人资本是我们的首要任务。我们采用集中但分散的投资组合，并利用稳健的对冲策略来减轻系统性市场风险。</p>
-            </div>
-            
-            <div class="service-item">
-                <h3>积极参与</h3>
-                <p>我们积极与投资组合公司的管理团队互动，以鼓励最佳资本分配、运营效率和可持续的治理实践。</p>
-            </div>
+            <!-- The previously existing service item structure has been removed as requested. -->
+
         </div>
     </div>
 
     <div class="footer">
-        &copy; 2025 Minghao Yang
+        &copy; 2025 杨明暠
     </div>
 </body>
 </html>
