@@ -5,16 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ming Partnership - Contact</title>
     <style>
-        body { font-family: 'Georgia', sans-serif; margin: 1; padding: 0; background-color: #f4f7f6; color: #333; }
-        .header { background-color: #3A6BF2; color: white; padding: 15px 20px; text-align: center; }
-        .header h1 { margin: 5; font-size: 24px; }
-        .nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .nav a:hover { text-decoration: underline; }
-        .container { max-width: 900px; margin: 40px auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .content h2 { color: #3A6BF2; border-bottom: 2px solid #3A6BF2; padding-bottom: 10px; margin-top: 0; }
-        .contact-details p { font-size: 16px; margin-bottom: 10px; }
-        .contact-details strong { display: inline-block; width: 150px; color: #3A6BF2; font-weight: bold; }
-        .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 30px; }
+        /* General Styling */
+        body { font-family: 'Georgia', sans-serif; margin: 0; padding: 0; background-color: #f0f3f6; color: #333; }
+        
+        /* Header */
+        .header { background-color: #1d5fa1; /* Deep Navy Blue */ color: white; padding: 20px 20px; text-align: center; }
+        .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        .nav { margin-top: 15px; }
+        .nav a { color: #FFD700; margin: 0 18px; text-decoration: none; font-weight: 600; font-size: 16px; transition: color 0.3s; }
+        .nav a:hover { color: white; text-decoration: underline; }
+        .lang-switch { border: 1px solid #FFD700; border-radius: 4px; padding: 5px 10px; font-size: 0.9em; margin-left: 30px; }
+
+        /* Main Container */
+        .container { max-width: 900px; margin: 40px auto; padding: 40px; background-color: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        .content h2 { color: #1d5fa1; /* Deep Navy Blue */ border-bottom: 3px solid #FFD700; padding-bottom: 15px; margin-bottom: 30px; font-size: 24px; font-weight: bold; }
+        .content p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; text-align: justify; }
+
+        /* Page-Specific: Contact Details */
+        .contact-details { 
+            background-color: #f8f8f8; 
+            border: 1px solid #ddd; 
+            padding: 20px; /* Reduced padding for compactness */
+            border-radius: 8px;
+            display: inline-block; /* Allow width to fit content if needed, or keep block for full width */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .contact-details p { 
+            font-size: 17px; 
+            margin: 0; /* Remove default margin for tighter spacing */
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on very small screens */
+        }
+        .contact-details strong { 
+            display: inline-block; 
+            width: auto; /* Allow width to be determined by content */
+            color: #1d5fa1; /* Deep Navy Blue */
+            font-weight: bold; 
+            margin-right: 10px;
+            white-space: nowrap; /* Prevent label from breaking */
+        }
+        
+        /* Footer */
+        .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; border-top: 1px solid #ddd; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -31,17 +66,14 @@
 
     <div class="container">
         <div class="content">
-            <h2>Get in Touch with the Partnership</h2>
-            <p>For investment inquiries, press relations, or partnership interest, please reach out to our administrative team.</p>
+            <h2>Contact Us</h2>
+            <p>Although we are not currently accepting new capital, we always welcome inquiries from potential or current partners who share our long-term values. Due to limited personnel, please allow time for a response; we appreciate your understanding that a direct reply may not always be guaranteed.</p>
 
             <div class="contact-details">
-                <p><strong>General Inquiries:</strong> info@mingpartnership.com</p>
-                <p><strong>Partner Relations:</strong> investors@mingpartnership.com</p>
-                <p><strong>Phone (Admin):</strong> (555) 123-4567</p>
-                <p><strong>Office Location:</strong> 123 Global Plaza, Suite 400, Financial District</p>
+                <p><strong>General Inquiries:</strong> minghaoy@umich.edu</p>
             </div>
             
-            <p style="margin-top: 30px; font-style: italic;">All inquiries are handled with strict confidence and reviewed within one business day.</p>
+            <p style="margin-top: 30px; font-style: italic;">All inquiries are held in strict confidence.</p>
         </div>
     </div>
 
